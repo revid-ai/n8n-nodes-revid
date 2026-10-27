@@ -2055,15 +2055,16 @@ export const SPEC: RevidSpec = {
 			"key": "createClipsFromVideo",
 			"label": "Create Clips From Video",
 			"n8nName": "Create Clips",
-			"description": "Cuts a long video (podcast, webinar, YouTube video) into short vertical clips with captions.",
+			"description": "Cuts a long YouTube video (podcast, webinar, talk) into short vertical clips with captions.",
 			"fields": [
 				{
 					"key": "videoUrl",
-					"label": "Video URL",
+					"label": "YouTube Video URL",
 					"type": "string",
 					"api": "source.url",
 					"required": true,
-					"help": "Public URL of the long video, or a YouTube link."
+					"placeholder": "https://www.youtube.com/watch?v=...",
+					"help": "Link of one YouTube video (youtube.com/watch?v=... or youtu.be/...), not a channel or a playlist."
 				},
 				{
 					"key": "clipCount",
