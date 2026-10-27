@@ -1,0 +1,62 @@
+{
+	"name": "n8n-nodes-revid",
+	"version": "0.1.0",
+	"description": "n8n nodes for Revid: create AI videos from prompts, scripts and articles, add captions, cut clips, generate images and publish to TikTok, YouTube, Instagram, X and Facebook.",
+	"license": "MIT",
+	"homepage": "https://www.revid.ai/integrations/n8n",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"revid",
+		"ai video",
+		"video generation",
+		"captions",
+		"tiktok",
+		"youtube shorts"
+	],
+	"author": {
+		"name": "Revid",
+		"email": "hello@revid.ai",
+		"url": "https://www.revid.ai"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/revid-ai/n8n-nodes-revid.git"
+	},
+	"bugs": {
+		"url": "https://github.com/revid-ai/n8n-nodes-revid/issues"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/RevidApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Revid/Revid.node.js",
+			"dist/nodes/Revid/RevidTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.54.3",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
