@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-revid",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n nodes for Revid: create AI videos from prompts, scripts and articles, add captions, cut clips, generate images and publish to TikTok, YouTube, Instagram, X and Facebook.",
 	"license": "MIT",
 	"homepage": "https://www.revid.ai/integrations/n8n",
